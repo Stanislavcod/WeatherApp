@@ -1,0 +1,13 @@
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\bin\Debug\WeatherAPIApplication.exe.config
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\bin\Debug\WeatherAPIApplication.exe
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\bin\Debug\WeatherAPIApplication.pdb
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\bin\Debug\Newtonsoft.Json.dll
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\bin\Debug\Newtonsoft.Json.xml
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.csproj.AssemblyReference.cache
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.Form1.resources
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.Properties.Resources.resources
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.csproj.GenerateResource.cache
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.csproj.CoreCompileInputs.cache
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.csproj.CopyComplete
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.exe
+C:\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.pdb
