@@ -118,14 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="imgonline-com-ua-Resize-YnMXCgdsj1Q1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgonline-com-ua-Resize-YnMXCgdsj1Q1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1625697505_8-kartinkin-com-p-groza-oboi-krasivie-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1625697505_8-kartinkin-com-p-groza-oboi-krasivie-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1369455-full-size-best-weather-wallpaper-1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1369455-full-size-best-weather-wallpaper-1920x1080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgonline-com-ua-Resize-YnMXCgdsj1Q" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgonline-com-ua-Resize-YnMXCgdsj1Q.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1369455-full-size-best-weather-wallpaper-1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1369455-full-size-best-weather-wallpaper-1920x1080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgonline-com-ua-Resize-1SDk4YrpKK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgonline-com-ua-Resize-1SDk4YrpKK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maxresdefault-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maxresdefault-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,10 +136,10 @@
   <data name="imgonline-com-ua-Resize-YnMXCgdsj1Q2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgonline-com-ua-Resize-YnMXCgdsj1Q2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgonline-com-ua-Resize-1SDk4YrpKK" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgonline-com-ua-Resize-1SDk4YrpKK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgonline-com-ua-Resize-YnMXCgdsj1Q1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgonline-com-ua-Resize-YnMXCgdsj1Q1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1625697505_8-kartinkin-com-p-groza-oboi-krasivie-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1625697505_8-kartinkin-com-p-groza-oboi-krasivie-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgonline-com-ua-Resize-dsQawxCk8dcE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgonline-com-ua-Resize-dsQawxCk8dcE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

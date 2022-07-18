@@ -93,6 +93,16 @@ namespace WeatherAPIApplication.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Resize_dsQawxCk8dcE {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-dsQawxCk8dcE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgonline_com_ua_Resize_YnMXCgdsj1Q {
             get {
                 object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-YnMXCgdsj1Q", resourceCulture);

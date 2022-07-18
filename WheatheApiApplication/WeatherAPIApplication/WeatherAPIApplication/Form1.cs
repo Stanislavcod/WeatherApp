@@ -23,27 +23,72 @@ namespace WeatherAPIApplication
         {
             VissibleIgnor();
         }
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+            GetWeather();
+            GetForecast();
+            VissibleIgnorTrue();
+        }
 
         string APIKey = "53c69a068e4b007bcdb3a1f5bb576ae4";
 
-        void getWeather()
+        double lon;
+        double lat;
+        void GetWeather()
         {
-            using (WebClient web = new WebClient())
+            try
             {
-                string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&units=metric&appid={1}",TBCity.Text,APIKey);
-                var json = web.DownloadString(url);
-                WeatherData.root Info = JsonConvert.DeserializeObject<WeatherData.root>(json);
+                using (WebClient web = new WebClient())
+                {
+                    string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&units=metric&appid={1}", TBCity.Text, APIKey);
+                    var json = web.DownloadString(url);
+                    WeatherData.root Info = JsonConvert.DeserializeObject<WeatherData.root>(json);
 
-                picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
-                labelCondition.Text = Info.weather[0].main;
-                labelDetails.Text = Info.weather[0].description;
-                labelSunriseN_A.Text = ConvertDateTime(Info.sys.sunrise).ToShortTimeString();
-                labelSunsetN_A.Text = ConvertDateTime(Info.sys.sunset).ToShortTimeString();
+                    picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+                    labelCondition.Text = Info.weather[0].main;
+                    labelDetails.Text = Info.weather[0].description;
+                    labelSunriseN_A.Text = ConvertDateTime(Info.sys.sunrise).ToShortTimeString();
+                    labelSunsetN_A.Text = ConvertDateTime(Info.sys.sunset).ToShortTimeString();
 
-                labelWindSpeedN_A.Text = Info.wind.speed.ToString();
-                labelPressureN_A.Text = Info.main.pressure.ToString();
-                labelHumidityH_A.Text = Info.main.humidity.ToString();
-                labelTempN_A.Text = Info.main.temp.ToString();
+                    labelWindSpeedN_A.Text = Info.wind.speed.ToString();
+                    labelPressureN_A.Text = Info.main.pressure.ToString();
+                    labelHumidityH_A.Text = Info.main.humidity.ToString();
+                    labelTempN_A.Text = Info.main.temp.ToString();
+
+                    lon = Info.coord.lon;
+                    lat = Info.coord.lat;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Oops,The city was not found");
+            }
+        }
+        void GetForecast()
+        {
+            try
+            {
+                using (WebClient web = new WebClient())
+                {
+                    string url = string.Format("https://api.openweathermap.org/data/2.5/onecall?lat={0}&lon={1}&units=metric&exclude=current,minutely,hourly,alerts&appid={2}", lat,lon, APIKey);
+                    var json = web.DownloadString(url);
+                    WeatherForecast.ForecastInfo forecastInfo = JsonConvert.DeserializeObject<WeatherForecast.ForecastInfo>(json);
+
+                    ForecasrUC FUC;
+                    for (int i = 0; i < 8; i++)
+                    {
+                        FUC = new ForecasrUC();
+                        FUC.pictWeatherIcon.ImageLocation = "https://openweathermap.org/img/w/" + forecastInfo.daily[i].weather[0].icon + ".png";
+                        FUC.labelMainWeather.Text = forecastInfo.daily[i].weather[0].main;
+                        FUC.labWeatherDescription.Text = forecastInfo.daily[i].weather[0].description;
+                        FUC.labelDT.Text = ConvertDateTime(forecastInfo.daily[i].dt).DayOfWeek.ToString();
+                        FLP.Controls.Add(FUC);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Oops,The city was not found");
             }
         }
 
@@ -54,11 +99,6 @@ namespace WeatherAPIApplication
             return day;
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            getWeather();
-            VissibleIgnorTrue();
-        }
 
         public void VissibleIgnor()
         {

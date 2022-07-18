@@ -48,6 +48,7 @@ namespace WeatherAPIApplication
             this.labelTempN_A = new System.Windows.Forms.Label();
             this.labelHumidity = new System.Windows.Forms.Label();
             this.labelTemp = new System.Windows.Forms.Label();
+            this.FLP = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@ namespace WeatherAPIApplication
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // labelCondition
             // 
@@ -91,7 +92,7 @@ namespace WeatherAPIApplication
             this.labelCondition.BackColor = System.Drawing.Color.Transparent;
             this.labelCondition.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCondition.ForeColor = System.Drawing.Color.Transparent;
-            this.labelCondition.Location = new System.Drawing.Point(166, 237);
+            this.labelCondition.Location = new System.Drawing.Point(80, 196);
             this.labelCondition.Name = "labelCondition";
             this.labelCondition.Size = new System.Drawing.Size(122, 29);
             this.labelCondition.TabIndex = 3;
@@ -103,7 +104,7 @@ namespace WeatherAPIApplication
             this.labelDetails.BackColor = System.Drawing.Color.Transparent;
             this.labelDetails.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDetails.ForeColor = System.Drawing.Color.Transparent;
-            this.labelDetails.Location = new System.Drawing.Point(166, 296);
+            this.labelDetails.Location = new System.Drawing.Point(80, 255);
             this.labelDetails.Name = "labelDetails";
             this.labelDetails.Size = new System.Drawing.Size(89, 29);
             this.labelDetails.TabIndex = 4;
@@ -115,7 +116,7 @@ namespace WeatherAPIApplication
             this.labelSunrise.BackColor = System.Drawing.Color.Transparent;
             this.labelSunrise.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSunrise.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSunrise.Location = new System.Drawing.Point(166, 365);
+            this.labelSunrise.Location = new System.Drawing.Point(80, 324);
             this.labelSunrise.Name = "labelSunrise";
             this.labelSunrise.Size = new System.Drawing.Size(103, 29);
             this.labelSunrise.TabIndex = 5;
@@ -127,7 +128,7 @@ namespace WeatherAPIApplication
             this.labelSunset.BackColor = System.Drawing.Color.Transparent;
             this.labelSunset.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSunset.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSunset.Location = new System.Drawing.Point(166, 431);
+            this.labelSunset.Location = new System.Drawing.Point(80, 390);
             this.labelSunset.Name = "labelSunset";
             this.labelSunset.Size = new System.Drawing.Size(96, 29);
             this.labelSunset.TabIndex = 6;
@@ -139,7 +140,7 @@ namespace WeatherAPIApplication
             this.labelSunriseN_A.BackColor = System.Drawing.Color.Transparent;
             this.labelSunriseN_A.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSunriseN_A.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSunriseN_A.Location = new System.Drawing.Point(269, 365);
+            this.labelSunriseN_A.Location = new System.Drawing.Point(183, 324);
             this.labelSunriseN_A.Name = "labelSunriseN_A";
             this.labelSunriseN_A.Size = new System.Drawing.Size(53, 29);
             this.labelSunriseN_A.TabIndex = 7;
@@ -151,7 +152,7 @@ namespace WeatherAPIApplication
             this.labelSunsetN_A.BackColor = System.Drawing.Color.Transparent;
             this.labelSunsetN_A.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSunsetN_A.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSunsetN_A.Location = new System.Drawing.Point(269, 431);
+            this.labelSunsetN_A.Location = new System.Drawing.Point(183, 390);
             this.labelSunsetN_A.Name = "labelSunsetN_A";
             this.labelSunsetN_A.Size = new System.Drawing.Size(53, 29);
             this.labelSunsetN_A.TabIndex = 8;
@@ -163,7 +164,7 @@ namespace WeatherAPIApplication
             this.labelPressureN_A.BackColor = System.Drawing.Color.Transparent;
             this.labelPressureN_A.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPressureN_A.ForeColor = System.Drawing.Color.Transparent;
-            this.labelPressureN_A.Location = new System.Drawing.Point(730, 296);
+            this.labelPressureN_A.Location = new System.Drawing.Point(644, 255);
             this.labelPressureN_A.Name = "labelPressureN_A";
             this.labelPressureN_A.Size = new System.Drawing.Size(53, 29);
             this.labelPressureN_A.TabIndex = 12;
@@ -175,7 +176,7 @@ namespace WeatherAPIApplication
             this.labelWindSpeedN_A.BackColor = System.Drawing.Color.Transparent;
             this.labelWindSpeedN_A.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelWindSpeedN_A.ForeColor = System.Drawing.Color.Transparent;
-            this.labelWindSpeedN_A.Location = new System.Drawing.Point(730, 237);
+            this.labelWindSpeedN_A.Location = new System.Drawing.Point(644, 196);
             this.labelWindSpeedN_A.Name = "labelWindSpeedN_A";
             this.labelWindSpeedN_A.Size = new System.Drawing.Size(53, 29);
             this.labelWindSpeedN_A.TabIndex = 11;
@@ -187,7 +188,7 @@ namespace WeatherAPIApplication
             this.labelPressure.BackColor = System.Drawing.Color.Transparent;
             this.labelPressure.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPressure.ForeColor = System.Drawing.Color.Transparent;
-            this.labelPressure.Location = new System.Drawing.Point(581, 296);
+            this.labelPressure.Location = new System.Drawing.Point(495, 255);
             this.labelPressure.Name = "labelPressure";
             this.labelPressure.Size = new System.Drawing.Size(118, 29);
             this.labelPressure.TabIndex = 10;
@@ -199,7 +200,7 @@ namespace WeatherAPIApplication
             this.labelWindSpeed.BackColor = System.Drawing.Color.Transparent;
             this.labelWindSpeed.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelWindSpeed.ForeColor = System.Drawing.Color.Transparent;
-            this.labelWindSpeed.Location = new System.Drawing.Point(581, 237);
+            this.labelWindSpeed.Location = new System.Drawing.Point(495, 196);
             this.labelWindSpeed.Name = "labelWindSpeed";
             this.labelWindSpeed.Size = new System.Drawing.Size(154, 29);
             this.labelWindSpeed.TabIndex = 9;
@@ -208,7 +209,7 @@ namespace WeatherAPIApplication
             // picIcon
             // 
             this.picIcon.BackColor = System.Drawing.Color.Transparent;
-            this.picIcon.Location = new System.Drawing.Point(171, 161);
+            this.picIcon.Location = new System.Drawing.Point(85, 120);
             this.picIcon.Name = "picIcon";
             this.picIcon.Size = new System.Drawing.Size(136, 73);
             this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -221,7 +222,7 @@ namespace WeatherAPIApplication
             this.labelHumidityH_A.BackColor = System.Drawing.Color.Transparent;
             this.labelHumidityH_A.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelHumidityH_A.ForeColor = System.Drawing.Color.Transparent;
-            this.labelHumidityH_A.Location = new System.Drawing.Point(730, 431);
+            this.labelHumidityH_A.Location = new System.Drawing.Point(644, 390);
             this.labelHumidityH_A.Name = "labelHumidityH_A";
             this.labelHumidityH_A.Size = new System.Drawing.Size(53, 29);
             this.labelHumidityH_A.TabIndex = 17;
@@ -233,7 +234,7 @@ namespace WeatherAPIApplication
             this.labelTempN_A.BackColor = System.Drawing.Color.Transparent;
             this.labelTempN_A.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTempN_A.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTempN_A.Location = new System.Drawing.Point(730, 363);
+            this.labelTempN_A.Location = new System.Drawing.Point(644, 322);
             this.labelTempN_A.Name = "labelTempN_A";
             this.labelTempN_A.Size = new System.Drawing.Size(53, 29);
             this.labelTempN_A.TabIndex = 16;
@@ -245,7 +246,7 @@ namespace WeatherAPIApplication
             this.labelHumidity.BackColor = System.Drawing.Color.Transparent;
             this.labelHumidity.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelHumidity.ForeColor = System.Drawing.Color.Transparent;
-            this.labelHumidity.Location = new System.Drawing.Point(581, 431);
+            this.labelHumidity.Location = new System.Drawing.Point(495, 390);
             this.labelHumidity.Name = "labelHumidity";
             this.labelHumidity.Size = new System.Drawing.Size(124, 29);
             this.labelHumidity.TabIndex = 15;
@@ -257,20 +258,31 @@ namespace WeatherAPIApplication
             this.labelTemp.BackColor = System.Drawing.Color.Transparent;
             this.labelTemp.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTemp.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTemp.Location = new System.Drawing.Point(581, 363);
+            this.labelTemp.Location = new System.Drawing.Point(495, 322);
             this.labelTemp.Name = "labelTemp";
             this.labelTemp.Size = new System.Drawing.Size(83, 29);
             this.labelTemp.TabIndex = 14;
             this.labelTemp.Text = "Temp:";
+            // 
+            // FLP
+            // 
+            this.FLP.AutoScroll = true;
+            this.FLP.BackColor = System.Drawing.Color.Transparent;
+            this.FLP.Location = new System.Drawing.Point(85, 440);
+            this.FLP.Name = "FLP";
+            this.FLP.Size = new System.Drawing.Size(858, 155);
+            this.FLP.TabIndex = 18;
+            this.FLP.WrapContents = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::WeatherAPIApplication.Properties.Resources._1625697505_8_kartinkin_com_p_groza_oboi_krasivie_10;
+            this.BackgroundImage = global::WeatherAPIApplication.Properties.Resources.imgonline_com_ua_Resize_dsQawxCk8dcE;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 603);
+            this.Controls.Add(this.FLP);
             this.Controls.Add(this.labelHumidityH_A);
             this.Controls.Add(this.labelTempN_A);
             this.Controls.Add(this.labelHumidity);
@@ -320,6 +332,7 @@ namespace WeatherAPIApplication
         private System.Windows.Forms.Label labelTempN_A;
         private System.Windows.Forms.Label labelHumidity;
         private System.Windows.Forms.Label labelTemp;
+        private System.Windows.Forms.FlowLayoutPanel FLP;
     }
 }
 
