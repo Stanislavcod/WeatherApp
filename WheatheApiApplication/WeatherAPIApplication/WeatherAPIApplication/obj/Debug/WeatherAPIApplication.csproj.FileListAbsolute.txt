@@ -25,3 +25,4 @@ C:\WeatherApp\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\
 C:\WeatherApp\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\bin\Debug\Newtonsoft.Json.xml
 C:\WeatherApp\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.csproj.CopyComplete
 C:\WeatherApp\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.ForecasrUC.resources
+C:\WeatherApp\WheatheApiApplication\WeatherAPIApplication\WeatherAPIApplication\obj\Debug\WeatherAPIApplication.csproj.SuggestedBindingRedirects.cache
